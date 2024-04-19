@@ -1,0 +1,114 @@
+
+.Home {
+    height: 100vh;
+    background-image: url('./vertigo.png');
+    background-size: 100% 100%;
+    /* Cover the entire element */
+    background-repeat: no-repeat;
+    /* Prevent image from repeating */
+    background-position: center;
+    /* Center the image */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+}
+
+.btn{
+    width: 150px;
+    padding: 10px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.hactive{
+   background-color: white;
+
+}
+
+.h1{
+    font-size: 3rem;
+    color: white;
+    width: 100%;
+}
+
+
+.active{
+    display: none;
+}
+
+.links {
+    position: absolute;
+    top: 40px;
+    right: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-image: linear-gradient(to right, rgb(136, 135, 135), rgb(53, 52, 52));
+    border-radius: 10px;
+    padding: 10px;
+}
+
+
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.imgg {
+    height: 34.8px;
+    width: 52.8px;
+}
+
+.verti {
+    color: #EAD8FB;
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+
+}
+
+.logo1:hover{
+    transform: scale(1.3);
+}
+
+.headline {
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 3.4rem;
+    letter-spacing: 0.6em;
+    font-weight: 900;
+    font-family: "Roboto", sans-serif;
+    margin-top: 60px;
+
+}
+
+@keyframes rotate {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(calc(100vh - 50px)) rotate(360deg);
+    }
+}
+
+.rotating-input {
+    text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    animation: rotate 5s linear infinite; /* Adjust animation duration and timing function as needed */
+}
